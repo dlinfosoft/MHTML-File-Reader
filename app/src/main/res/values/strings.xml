@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">MHTML Viewer</string>
+    <string name="foldername">MHTML Viewer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="mhtSizeError">Cannot open MHT files of over 30 Mega Bytes</string>
+    <string name="AddFiles">Add File</string>
+    <string name="AddUnavailable">Ad unavailable at this time</string>
+    <string name="Attention">Attention!</string>
+    <string name="Cancel">Cancel</string>
+    <string name="ClearRecents">Clear Recent Files</string>
+    <string name="Confirm">Confirm</string>
+    <string name="Error">Error</string>
+    <string name="FileNotFoundOrFileTypeNotSupported">File Not Found Or File Type Not Supported</string>
+    <string name="ListOfFiles">List of files</string>
+    <string name="LoadInOtherMmethod">Reload in alternative method</string>
+    <string name="LoadingFile">Loading File</string>
+    <string name="NoActivityFound">No application found to open this file type</string>
+    <string name="NoAppFoundForFileType">No application found to open this file type</string>
+    <string name="OldMHTMethodWarning">Using an older method to process MHT files, History will not be saved</string>
+    <string name="OpenFile">Open File</string>
+    <string name="Print">Print</string>
+    <string name="PrintComplete" />
+    <string name="RecentFiles">Recent Files</string>
+    <string name="RemoveAdsFor4Hours">Remove Ads</string>
+    <string name="SendEmail">Send Email</string>
+    <string name="SendFeedback">Send Feedback</string>
+    <string name="Share">Share</string>
+    <string name="TimeLeftWithParam">Time Left %1$s</string>
+    <string name="UseOldMHTMethod">Change Method to display MHT</string>
+    <string name="WaitingForAdd">Waiting for ad</string>
+    <string name="WatchAnAddToRemoveAds">Watch a video to hide bottom banner ads for the next 4 hours</string>
+    <string name="Working">Working...</string>
+    <string name="YouAreUsingAnOldMehodForCreatingMhtFiles">Using this older method for creating MHT files might result in app crashes, continue?</string>
+
+    <string name="select_str">Select the .MHT/.MHTML/.EML file from your storage to open and convert to a PDF file.</string>
+    <string name="export_str">Your exported PDF files access \n from your phone</string>
+
+    <string name="rate_us2">Would you like rating this app?</string>
+    <string name="rate_us">Would you like rating this app?</string>
+    <string name="never">No,Thanks</string>
+    <string name="rate_now">Rate now</string>
+    <string name="later">Later</string>
+    <string name="how_was_your_experience_with_us">Rate your experience</string>
+    <string name="how_was_your_experience_with_us2">with us?</string>
+    <string name="ad_attribution">Ad</string>
+
+    <string name="interstitial_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="banner_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="app_open_id">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>
+
+
+</resources>

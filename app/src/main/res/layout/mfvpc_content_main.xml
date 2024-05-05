@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/mfvpc_app_bar_main">
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        ads:adSize="BANNER"
+        android:layout_gravity="top|center"
+        ads:adUnitId="@string/banner_id">
+    </com.google.android.gms.ads.AdView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/white"
+        android:layout_weight="5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="20dp"-->
+<!--                android:gravity="center"-->
+<!--               >-->
+<!--                <ImageView-->
+<!--                    android:layout_width="130dp"-->
+<!--                    android:layout_height="100dp"-->
+<!--                    android:src="@drawable/ic_mhtml">-->
+
+<!--                </ImageView>-->
+
+<!--            </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:padding="20dp"
+                    android:fontFamily="@font/mfvpc_display_medium"
+                    android:gravity="center"
+                    android:textColor="@color/background_floating_material_dark"
+                    android:text="@string/select_str">
+
+                </TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/native_ads"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@color/white">
+            <LinearLayout
+                android:id="@+id/open_file"
+                android:layout_width="match_parent"
+                android:background="@drawable/rounded_btn"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                android:elevation="5dp"
+                android:gravity="center"
+                android:layout_height="50dp">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="18sp"
+                    android:layout_gravity="center|bottom"
+                    android:gravity="center"
+                    android:textAllCaps="true"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/mfvpc_display_medium"
+                    android:text="Select file"
+                    android:textColor="@color/white"
+                    android:drawableLeft="@drawable/ic_folder">
+
+                </androidx.appcompat.widget.AppCompatTextView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5">
+
+        <LinearLayout
+            android:id="@+id/top_constraint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+          >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#bfbfbf"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_navads"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Showing Ads..."
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <FrameLayout
+                    android:id="@+id/fl_adplaceholder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp" />
+            </LinearLayout>
+
+    </LinearLayout>
+
+    <!--if view is set using weight than give weight accordingly.-->
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".mfvpc_activity.MFVPC_Privacy_policy">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="5dp"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <ImageView
+            android:id="@+id/back_iv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:gravity="center|left"
+            android:padding="14dp"
+            android:src="@drawable/toolbar_arrow_new" />
+
+        <TextView
+            android:id="@+id/file_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:fontFamily="@font/mfvpc_display_medium"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:text="Privacy Policy"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5" />
+
+    </LinearLayout>
+
+    <!--if view is set using weight than give weight accordingly.-->
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="LARGE_BANNER"
+        android:layout_gravity="top|center"
+        ads:adUnitId="@string/banner_id">
+    </com.google.android.gms.ads.AdView>
+
+
+
+    <WebView
+        android:id="@+id/privacypolicyweb"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+
+
+</LinearLayout>

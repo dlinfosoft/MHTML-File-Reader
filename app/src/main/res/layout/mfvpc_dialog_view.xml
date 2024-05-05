@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:layout_gravity="center"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/Title_d"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="start|top"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:text="Are you sure to remove all recents files."
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="end|bottom"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/No_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:fontFamily="@font/mfvpc_display_semi_bold"
+                    android:textSize="17dp"
+                    android:text="NO"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="0dp" />
+
+                <TextView
+                    android:id="@+id/Yes_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textSize="17dp"
+                    android:fontFamily="@font/mfvpc_display_semi_bold"
+                    android:text="YES"
+                    android:textColor="@color/colorPrimaryDark" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

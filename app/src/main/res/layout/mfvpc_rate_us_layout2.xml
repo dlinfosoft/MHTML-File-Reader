@@ -1,0 +1,219 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    >
+
+
+<androidx.cardview.widget.CardView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    android:elevation="10dp"
+    app:cardCornerRadius="5dp"
+    app:cardBackgroundColor="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginTop="7dp"
+            android:weightSum="3">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:elevation="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_mhtml">
+            </ImageView>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rate_us2"
+                android:fontFamily="@font/mfvpc_display_medium"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="@dimen/h5"
+                android:paddingRight="10dp"
+                android:textColor="@color/tooltip_background_dark"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            >
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:id="@+id/rate_message"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/how_was_your_experience_with_us"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="2dp"
+                android:visibility="gone"
+                android:layout_centerVertical="true"
+                android:text="@string/how_was_your_experience_with_us2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"></LinearLayout>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:weightSum="11"
+          android:orientation="horizontal"
+          android:layout_height="50dp">
+          <ImageView
+              android:layout_width="0dp"
+              android:layout_weight="0.5"
+              android:layout_height="match_parent"
+              android:layout_marginTop="3dp"
+              android:padding="5dp"
+              tools:ignore="VectorDrawableCompat" />
+          <ImageView
+              app:srcCompat="@drawable/ic_rate"
+              android:layout_width="0dp"
+              android:layout_weight="2"
+              android:layout_height="match_parent"
+              android:layout_marginTop="3dp"
+              android:padding="5dp"
+              tools:ignore="VectorDrawableCompat" />
+          <ImageView
+              app:srcCompat="@drawable/ic_rate"
+              android:layout_width="0dp"
+              android:layout_weight="2"
+              android:layout_height="match_parent"
+              android:layout_marginTop="3dp"
+              android:padding="5dp"
+              tools:ignore="VectorDrawableCompat" />
+          <ImageView
+              app:srcCompat="@drawable/ic_rate"
+              android:layout_width="0dp"
+              android:layout_weight="2"
+              android:layout_height="match_parent"
+              android:layout_marginTop="3dp"
+              android:padding="5dp"
+              tools:ignore="VectorDrawableCompat" />
+          <ImageView
+              app:srcCompat="@drawable/ic_rate"
+              android:layout_width="0dp"
+              android:layout_weight="2"
+              android:layout_height="match_parent"
+              android:layout_marginTop="3dp"
+              android:padding="5dp"
+              tools:ignore="VectorDrawableCompat" />
+          <ImageView
+              app:srcCompat="@drawable/ic_rate"
+              android:layout_width="0dp"
+              android:layout_weight="2"
+              android:layout_height="match_parent"
+              android:layout_marginTop="3dp"
+              android:padding="5dp"
+              tools:ignore="VectorDrawableCompat" />
+          <ImageView
+              android:layout_width="0dp"
+              android:layout_weight="0.5"
+              android:layout_height="match_parent"
+              android:layout_marginTop="3dp"
+              android:padding="5dp"
+              tools:ignore="VectorDrawableCompat" />
+
+      </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"></LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="5dp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/never"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:fontFamily="@font/mfvpc_display_regular"
+                android:textColor="@color/tooltip_background_dark"
+                android:text="@string/never"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:textAlignment="center"
+                android:textSize="17sp" />
+
+
+             <LinearLayout
+                 android:layout_width="1dp"
+                 android:layout_height="match_parent"
+                 android:background="@color/colorPrimaryDark">
+
+             </LinearLayout>
+
+            <TextView
+                android:id="@+id/rate_now"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/tooltip_background_dark"
+                android:text="Sure"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:fontFamily="@font/mfvpc_display_regular"
+                android:textAlignment="center"
+                android:textSize="17sp" />
+
+
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+</FrameLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Mainly"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:background="@color/white"
+    android:layout_marginTop="5dp"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/mhtll"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="15dp"
+        android:background="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_height="60dp">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_mhtml_item"
+                    />
+
+
+            </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/bottom_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:layout_gravity="bottom"
+                   >
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="6"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/mhtname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:paddingLeft="5dp"
+                            android:layout_marginBottom="3dp"
+                            android:singleLine="true"
+                            android:textColor="#333333"
+                            android:fontFamily="@font/mfvpc_pop_medium"
+                            android:text="PDF"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/mhtpath"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:paddingLeft="5dp"
+                            android:singleLine="true"
+                            android:textColor="#AAAAAA"
+                            android:fontFamily="@font/mfvpc_pop_medium"
+                            android:text="path"
+                            android:textSize="13dp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/mhtsize"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center|right"
+                                android:paddingLeft="10dp"
+                                android:singleLine="true"
+                                android:textColor="#AAAAAA"
+                                android:fontFamily="@font/mfvpc_pop_medium"
+                                android:text="PDF"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:id="@+id/mhttime"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center|right"
+                                android:layout_marginTop="3dp"
+                                android:paddingLeft="10dp"
+                                android:textColor="#AAAAAA"
+                                android:fontFamily="@font/mfvpc_pop_medium"
+                                android:text="3:00pm"
+                                android:textSize="13dp" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+        </LinearLayout>
+
+
+
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#AAAAAA">
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

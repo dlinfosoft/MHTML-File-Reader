@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mhtmhtmlfilesviewer.pdfconverter">
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+
+    <application
+        android:name="com.mhtmhtmlfilesviewer.pdfconverter.mfvpc_common.MFVPC_App"
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:hardwareAccelerated="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppThemeCompactMht">
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/app_id" />
+
+
+        <activity android:name="com.mhtmhtmlfilesviewer.pdfconverter.mfvpc_activity.MFVPC_Privacy_policy"
+            android:resizeableActivity="false"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity
+            android:name="com.mhtmhtmlfilesviewer.pdfconverter.mfvpc_activity.MFVPC_SplashActivity"
+            android:resizeableActivity="false"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mhtmhtmlfilesviewer.pdfconverter.mfvpc_activity.MFVPC_RecentActivity"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden">
+
+        </activity>
+        <activity
+            android:name="com.mhtmhtmlfilesviewer.pdfconverter.mfvpc_activity.MFVPC_WebViewActivityNew"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden">
+
+        </activity>
+        <activity
+            android:name="com.mhtmhtmlfilesviewer.pdfconverter.mfvpc_activity.MFVPC_MainActivity"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden">
+
+        </activity>
+        <activity
+            android:name="com.mhtmhtmlfilesviewer.pdfconverter.mfvpc_activity.MFVPC_FilesSelection"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.NOTIFICATION_PREFERENCES" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="googlechrome" />
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:scheme="about" />
+                <data android:scheme="javascript" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="googlechrome" />
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:scheme="about" />
+                <data android:scheme="javascript" />
+                <data android:scheme="content" />
+                <data android:mimeType="text/html" />
+                <data android:mimeType="text/plain" />
+                <data android:mimeType="application/xhtml+xml" />
+                <data android:mimeType="message/rfc822" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="application/octet-stream"
+                    android:pathPattern="/.*\\.mhtml"
+                    android:scheme="file"
+                    tools:ignore="AppLinkUrlError" />
+                <data
+                    android:mimeType="application/octet-stream"
+                    android:pathPattern="/.*\\.mht"
+                    android:scheme="content" />
+                <data android:mimeType="multipart/related" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="application/octet-stream"
+                    android:pathPattern="/.*\\.mhtml"
+                    android:scheme="file"
+                    tools:ignore="AppLinkUrlError" />
+                <data
+                    android:mimeType="application/octet-stream"
+                    android:pathPattern="/.*\\.mht"
+                    android:scheme="content" />
+                <data android:mimeType="message/rfc822" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:mimeType="application/octet-stream"
+                    android:pathPattern="/.*\\.mhtml"
+                    android:scheme="file" />
+                <data
+                    android:mimeType="application/octet-stream"
+                    android:pathPattern="/.*\\.mht"
+                    android:scheme="content" />
+                <data android:host="*" />
+                <data android:pathPattern="/.*\\.mhtml" />
+                <data android:pathPattern="/.*\\.mht" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:mimeType="application/octet-stream"
+                    android:pathPattern="/.*\\.mhtml"
+                    android:scheme="file" />
+                <data
+                    android:mimeType="application/octet-stream"
+                    android:pathPattern="/.*\\.mht"
+                    android:scheme="content" />
+                <data android:host="*" />
+                <data android:pathPattern="/.*\\.mhtml" />
+                <data android:pathPattern="/.*\\.mht" />
+                <data android:mimeType="*/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_SEARCH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.speech.action.VOICE_SEARCH_RESULTS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.sec.android.airview.HOVER" />
+            </intent-filter>
+        </activity>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.mhtmhtmlfilesviewer.pdfconverter.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+    </application>
+
+</manifest>

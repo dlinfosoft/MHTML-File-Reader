@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:elevation="5dp"
+        android:background="@color/colorPrimary"
+        android:layout_height="?actionBarSize"
+        >
+
+        <ImageView
+            android:id="@+id/back_iv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:padding="14dp"
+            android:src="@drawable/toolbar_arrow_new"
+            android:gravity="center|left"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+
+             />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8.5"
+            android:gravity="left|center"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/file_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mfvpc_display_medium"
+                android:paddingLeft="5dp"
+                android:text="............."
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/url"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/mfvpc_display_light"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:text=".........."
+                android:textSize="11sp"
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           />
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/spin_kit"
+            style="@style/SpinKitView.Circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            app:SpinKit_Color="#1AA05E" />
+
+        <TextView
+            android:id="@+id/unsupported_txt"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="18dp"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:fontFamily="@font/mfvpc_pop_medium"
+            android:text="File not supported."
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/printll"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:foreground="?attr/selectableItemBackground"
+        android:layout_height="50dp"
+        >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/ic_printer"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/mfvpc_pop_medium"
+            android:gravity="center"
+            android:text="Print"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="20dp">
+        </androidx.appcompat.widget.AppCompatTextView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

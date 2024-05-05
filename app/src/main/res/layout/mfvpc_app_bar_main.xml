@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".mfvpc_activity.MFVPC_MainActivity">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="10"
+                android:orientation="horizontal"
+                android:background="@color/colorPrimary"
+                android:layout_height="?actionBarSize"
+                >
+
+                <ImageView
+                    android:id="@+id/back_button"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:visibility="gone"
+                    android:padding="14dp"
+                    android:src="@drawable/ic_side_menu"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textSize="19sp"
+                    android:text="  MHT/MHTML/EML Viewer"
+                    android:textColor="@color/white"
+                    android:gravity="left|center"
+                    android:fontFamily="@font/mfvpc_display_medium"
+                    android:layout_weight="8.5"/>
+
+
+                <ImageView
+                    android:id="@+id/more"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:padding="14dp"
+                    android:src="@drawable/ic_baseline_more_vert_24"
+                    />
+
+
+
+            </LinearLayout>
+
+
+    <include layout="@layout/mfvpc_content_main" />
+
+
+</LinearLayout>

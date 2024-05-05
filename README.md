@@ -3,7 +3,7 @@
 
 MHT/MHTML/EML Files Viewer & PDF Converter is an application that provides easy way to preview websites saved for offline viewer
 
-<img src="ic_launcher-web.png"  width="300px">
+<img src="ic_launcher-playstore.png"  width="300px">
 
 
 [<img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" alt="Get it on Google Play" height=
